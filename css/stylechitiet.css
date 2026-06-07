@@ -1,0 +1,281 @@
+/* =========================
+   CÀI ĐẶT CHUNG
+========================= */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner{
+    width: 100%;
+    height: 220px;
+
+    background-image: url("../assets/backgrond.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.noidung{
+    position: relative;
+    z-index: 2;
+}
+
+table{
+    width: 100%;
+    padding: 20px 30px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 20px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.logo1,
+.logo2{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 2px solid white;
+}
+.logo3{
+    width: 120px;
+    height: 80px;
+
+    border-radius: 10%;
+    object-fit: cover;
+
+    border: 2px solid white;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.thumuc{
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 35px;
+
+    padding-right: 30px;
+
+    margin-top: 20px;
+}
+
+.thumuc a{
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-shadow: 2px 2px 5px black;
+
+    transition: 0.3s;
+}
+
+.thumuc a:hover{
+    color: yellow;
+}
+
+/* =========================
+   CHI TIẾT SẢN PHẨM
+========================= */
+
+.chitiet{
+    width: 90%;
+
+    margin: 40px auto;
+}
+
+.chitiet h2{
+    text-align: center;
+
+    color: #0d6efd;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+}
+
+/* Card */
+
+.card-chitiet{
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+.card-chitiet:hover{
+    transform: translateY(-5px);
+}
+
+.card-chitiet img{
+    width: 250px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.thongtin{
+    flex: 1;
+}
+
+.thongtin h3{
+    color: #0d6efd;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.gia{
+    color: red;
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    margin: 10px 0;
+}
+
+.thongtin p{
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.trangthai{
+    color: green;
+
+    font-weight: bold;
+}
+
+/* =========================
+   THÔNG TIN ĐẶT HÀNG
+========================= */
+
+.dat-hang{
+    width: 90%;
+
+    margin: 50px auto;
+
+    background: linear-gradient(135deg,#709776,#527382);
+    
+
+    color: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.dat-hang h2{
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-size: 32px;
+}
+
+.dat-hang p{
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    .logo1,
+    .logo2{
+        width: 60px;
+        height: 60px;
+    }
+
+    .thumuc{
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        padding-right: 0;
+    }
+
+    .thumuc a{
+        font-size: 16px;
+    }
+
+    .card-chitiet{
+        flex-direction: column;
+    }
+
+    .card-chitiet img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .dat-hang{
+        padding: 25px;
+    }
+}

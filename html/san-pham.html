@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - HTX Sinh viên TVU</title>
+
+    <link rel="stylesheet" href="../css/stylesanpham.css">
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="banner">
+
+        <div class="noidung">
+
+            <table>
+                <tr>
+
+                    <td>
+                        <h1>Hợp Tác Xã Sinh Viên Đại Học Trà Vinh</h1>
+                    </td>
+
+                    <td width="120">
+                        <img src="../assets/logohtx.jpg" alt="" class="logo1">
+                    </td>
+
+                    <td width="120">
+                        <img src="../assets/logotvu.jpg" alt="" class="logo2">
+                    </td>
+                     <td width="120">
+                        <img src="../assets/logomahai.jpg" alt="Logo HTX" class="logo3">
+                    </td>
+                </tr>
+            </table>
+
+            <nav class="thumuc">
+                <a href="../index.html">Trang chủ</a>
+                <a href="gioi-thieu.html">Giới thiệu</a>
+                <a href="san-pham.html">Sản phẩm</a>
+                <a href="chi-tiet.html">chi tiết</a>
+                <a href="lien-he.html">Liên hệ</a>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!-- Sản phẩm -->
+
+    <div class="sanpham">
+
+        <h2>Sản phẩm tiêu biểu</h2>
+
+        <div class="card-container">
+
+            <!-- Trà Đường -->
+            <div class="card">
+                <img src="../assets/traduong.jpg" alt="">
+                <h3>Trà Đường</h3>
+                <p class="gia">6.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Trà Đường',
+                '6.000đ',
+                'Trà đường là thức uống giải khát truyền thống được nhiều sinh viên yêu thích.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Trà Tắc -->
+            <div class="card">
+                <img src="../assets/tratac.jpg" alt="">
+                <h3>Trà Tắc</h3>
+                <p class="gia">6.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Trà Tắc',
+                '6.000đ',
+                'Trà tắc có vị chua ngọt thanh mát, rất phù hợp trong những ngày nắng nóng.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Cafe -->
+            <div class="card">
+                <img src="../assets/cafe.jpg" alt="">
+                <h3>Cà Phê</h3>
+                <p class="gia">10.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Cà Phê',
+                '10.000đ',
+                'Cà phê đậm đà giúp tỉnh táo và tăng sự tập trung trong học tập.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Bánh mì đặc biệt -->
+            <div class="card">
+                <img src="../assets/banhmidatbiet.jpg" alt="">
+                <h3>Bánh Mì Đặc Biệt</h3>
+                <p class="gia">20.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Bánh Mì Đặc Biệt',
+                '20.000đ',
+                'Bánh mì đặc biệt với nhiều loại nhân hấp dẫn, thơm ngon và đầy đủ dinh dưỡng.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Boncha -->
+            <div class="card">
+                <img src="../assets/boncha.png" alt="">
+                <h3>Nước Boncha</h3>
+                <p class="gia">10.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Nước Boncha',
+                '10.000đ',
+                'Thức uống thơm ngon, được nhiều sinh viên lựa chọn mỗi ngày.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Coca Cola -->
+            <div class="card">
+                <img src="../assets/cocacola.jpg" alt="">
+                <h3>Coca Cola</h3>
+                <p class="gia">10.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Coca Cola',
+                '10.000đ',
+                'Nước giải khát có ga nổi tiếng với hương vị quen thuộc.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Bánh mì chả cá -->
+            <div class="card">
+                <img src="../assets/banhmichaca.jpg" alt="">
+                <h3>Bánh Mì Chả Cá</h3>
+                <p class="gia">15.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Bánh Mì Chả Cá',
+                '15.000đ',
+                'Bánh mì chả cá thơm ngon với phần nhân đậm vị và rau tươi.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Bánh mì chả trứng -->
+            <div class="card">
+                <img src="../assets/banhmichatrung.jpg" alt="">
+                <h3>Bánh Mì Chả Trứng</h3>
+                <p class="gia">15.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Bánh Mì Chả Trứng',
+                '15.000đ',
+                'Bánh mì chả trứng giàu dinh dưỡng, phù hợp cho bữa sáng.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- Aquafina -->
+            <div class="card">
+                <img src="../assets/aquafina.jpg" alt="">
+                <h3>Aquafina</h3>
+                <p class="gia">5.000đ</p>
+
+                <button onclick="hienChiTiet(
+                'Aquafina',
+                '5.000đ',
+                'Nước uống tinh khiết giúp bổ sung nước cho cơ thể.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+            <!-- 7UP -->
+            <div class="card">
+                <img src="../assets/7up.jpg" alt="">
+                <h3>7UP</h3>
+                <p class="gia">10.000đ</p>
+
+                <button onclick="hienChiTiet(
+                '7UP',
+                '10.000đ',
+                'Nước ngọt vị chanh tươi mát mang lại cảm giác sảng khoái.'
+                )">
+                    Xem chi tiết
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Popup chi tiết -->
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="dong" onclick="dongChiTiet()">
+                &times;
+            </span>
+
+            <h2 id="tensp"></h2>
+
+            <p id="giasp"></p>
+
+            <p id="motasp"></p>
+
+        </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+    <div class="lienhe-footer">
+
+    <h2>Thông Tin Liên Hệ</h2>
+
+    <p>
+        <b>Zalo: 0979452171</b><br>
+      
+    </p>
+
+    <p>
+        <b>Địa chỉ: 126 Nguyễn Thiện Thành, Phường Hòa Thuận,
+        Vĩnh Long, Việt Nam</b><br>
+        
+    </p>
+
+    <p>
+        <b>Email: nguyennhut.dh2021@gmail.com</b><br>
+        
+    </p>
+
+</div>
+
+</body>
+
+</html>
